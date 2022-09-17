@@ -15,12 +15,14 @@ import RLogo from "../img/r.svg";
 
 const AppAbout = (props) => {
   return (
-    <div className="h-auto bg-dark-blue text-white animate-fade-in-down pb-10">
+    <div className="h-auto bg-dark-blue text-white pb-10">
       <main className="mx-auto w-4/5 md:w-3/5">
         {/* Title */}
-        <h1 className="text-4xl font-bold tracking-wide pt-6 md:text-5xl">
+        <h1 className="text-4xl font-bold tracking-wide pt-6 md:text-5xl animate-fade-in">
           {props.title}
         </h1>
+        {/* Sub title */}
+        <p className="text-3xl font-bold border-l-4 mt-20 px-3">About Me</p>
         <div className="text-white text-md pt-6 md:text-xl">
           <p className="text-white">
             Hello, my name is Emmy and I enjoy being creative.
@@ -51,7 +53,11 @@ const AppAbout = (props) => {
             I'm always curious to learn more when it comes to new technologies
             and coding!
             <br />
-            Here are technologies I've worked on :
+            {/* Sub title */}
+            <p className="text-3xl font-bold border-l-4 mt-20 mb-6 px-3">
+              Education
+            </p>
+            <p>Here are technologies I've worked on :</p>
           </p>
           {/* Skill icons */}
           {/* HTML, CSS, Sass, Tailwind */}
