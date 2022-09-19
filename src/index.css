@@ -15,3 +15,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@layer components {
+  .sub-title {
+    @apply text-3xl font-bold border-l-4 mt-20 px-3 mb-8;
+  }
+}
