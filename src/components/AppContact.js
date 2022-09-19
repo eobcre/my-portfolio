@@ -87,7 +87,7 @@ const AppContact = (props) => {
           </button>
         </div>
       </form>
-      <div className="bg-dark-blue text-white text-md flex justify-center items-centerpy-5">
+      <div className="bg-dark-blue text-white text-md flex justify-center items-center pt-10">
         <HiArrowCircleUp className="text-6xl" onClick={returnTop} />
       </div>
     </div>
