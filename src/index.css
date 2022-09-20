@@ -17,7 +17,15 @@ code {
 }
 
 @layer components {
-  .sub-title {
+  .btn-st {
+    @apply px-9 py-4 rounded-md text-white font-bold tracking-wide border-2 border-light-blue cursor-pointer hover:bg-light-blue transition-all duration-300 w-max self-center md:text-xl md:self-start;
+  }
+
+  .sub-st {
     @apply text-3xl font-bold border-l-4 mt-20 px-3 mb-8;
+  }
+
+  .fig-st {
+    @apply mx-auto text-center py-3 text-light-blue;
   }
 }
