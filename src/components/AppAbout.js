@@ -37,7 +37,7 @@ const AppAbout = (props) => {
               rel="noreferrer"
               className="text-light-blue hover:text-blue-300"
             >
-              Resume
+              resume
             </a>
             , there are more details available.
           </p>
