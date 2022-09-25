@@ -7,6 +7,9 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
+  const toggle = () => setNavbar(!navbar);
+  const hide = () => setNavbar(false);
+  const show = () => setNavbar(true);
 
   return (
     <nav className="fixed top-0">
@@ -19,7 +22,7 @@ export default function Header() {
             <div className="md:hidden">
               <button
                 className="p-2 text-white rounded-md outline-none"
-                onClick={() => setNavbar(!navbar)}
+                onClick={toggle}
               >
                 {navbar ? (
                   <HiX className="text-4xl" /> // Close icon
@@ -45,6 +48,9 @@ export default function Header() {
                   smooth={true}
                   offset={-80}
                   duration={500}
+                  onClick={toggle}
+                  onBlur={hide}
+                  onFocus={show}
                 >
                   About
                 </Link>
@@ -57,6 +63,9 @@ export default function Header() {
                   smooth={true}
                   offset={-80}
                   duration={500}
+                  onClick={toggle}
+                  onBlur={hide}
+                  onFocus={show}
                 >
                   Projects
                 </Link>
@@ -69,6 +78,9 @@ export default function Header() {
                   smooth={true}
                   offset={-80}
                   duration={500}
+                  onClick={toggle}
+                  onBlur={hide}
+                  onFocus={show}
                 >
                   Contact
                 </Link>
