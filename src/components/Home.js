@@ -54,12 +54,7 @@ class Home extends React.Component {
                 {this.props.subquote}
               </p>
               {/* Button */}
-              <a
-                href={PDF}
-                target="_blank"
-                rel="noreferrer"
-                className="px-9 py-4 rounded-md text-white text-md font-bold tracking-wide border-2 border-light-blue cursor-pointer hover:bg-light-blue transition-all duration-300 w-max self-center md:text-xl md:self-start"
-              >
+              <a href={PDF} target="_blank" rel="noreferrer" className="btn-st">
                 {this.props.name}
               </a>
             </div>
